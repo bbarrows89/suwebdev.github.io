@@ -1,6 +1,27 @@
-COPE SU Github Pages
-====================
+# SU WebDev Pages
 
-View the rendered version of these pages online:
+This is the org pages repository for the Web Development Certificate at Seattle University.
 
-copesu.github.io
+Using this repository
+=====================
+This repository requires installation of Node.js, along with NPM, Bower, and Grunt. It was created via the Yeoman templating tool.
+
+To bootstrap the site run:
+
+```bash
+npm install
+bower install
+```
+
+To build the site locally run the ``grunt build`` command.
+
+
+Deploying changes to suwebdev.github.io
+=====================================
+Run the following commands:
+
+```
+grunt build
+
+grunt buildcontrol:pages
+```

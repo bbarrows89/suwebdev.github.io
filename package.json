@@ -1,6 +1,6 @@
 {
-  "name": "copesu-github-io",
-  "version": "0.0.0",
+  "name": "suwebdev-github-io",
+  "version": "0.0.10",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
