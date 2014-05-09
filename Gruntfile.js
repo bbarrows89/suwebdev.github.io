@@ -366,6 +366,7 @@ module.exports = function (grunt) {
             },
             pages: {
                 options: {
+                    remote: 'git@github.com:suwebdev/suwebdev.github.io.git',
                     branch: 'master' // Used for Org/User pages
                     // branch: 'gh-pages' //Used for project pages
                 }
