@@ -103,7 +103,7 @@ body {
 }
 .feature {
     min-height: 300px;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem 2rem;
     color: @brand-white;
     text-shadow: 2px 2px 0 rgba(56, 57, 56, 1);
     .btn-apply {
@@ -128,7 +128,7 @@ body {
     }
     .bold-serif {
         font-family: @font-family-serif;
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-weight: 700;
     }
     &.webdev-intro {
@@ -213,19 +213,20 @@ body {
         background-size: cover;
         position: relative;
         color: @brand-white;
-
+        p.bold-serif {
+            font-size: 3.5rem;
+        }
     }
     &#discover {
         background: url(img/bkgd_tiles/p4_black.png) repeat;
         height: auto;
         position: relative;
         padding: 0;
-        .image {
-            text-align: right;
-            padding-right: 2rem;
+        p.bold-serif {
+            font-size: 3.5rem;
         }
 
-        h2 { color: @brand-primary; }
+        h2 { color: @brand-yellow; }
         .content:before {
             content: "";
             position: absolute;
@@ -255,13 +256,13 @@ body {
             text-align: right;
             padding-right: 8rem;
             padding-top: 4rem;
+            height: 100%;
         }
     }
     &#thrive {
         background: url('img/bkgd_tiles/p1_red.png') repeat;
     }
     &#apply-now{
-        //.blend('/img/cafe_racer_1440x600'; @brand-blue; overlay);
         background-image: url('/img/cafe_racer_1440x600.jpg');
         background-position: bottom center;
         background-repeat: no-repeat;
