@@ -101,7 +101,70 @@ body {
     }
 
 }
-.feature {
+.cost {
+    .feature-intro {
+        text-align: center;
+        background: url('/img/bag_boots_1440.jpg') top center no-repeat;
+        background-size: cover;
+        min-height: 300px;
+        padding: 0;
+        .content {
+            background: rgba(239, 65, 53, 0.8);
+            padding: 2rem;
+            width: 100%;
+            height: 100%;
+        }
+        p.lead {
+            font-size: 4rem;
+            color: @brand-white;
+        }
+        h1 {
+            color: @brand-yellow;
+            font-family: @font-family-condensed;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 6rem;
+            text-shadow: 2px 2px 0 @brand-black;
+        }
+    }
+    .cost-breakdown {
+        padding: 4rem;
+        background: url('img/bkgd_tiles/p4_black.png') repeat;
+        color: @brand-white;
+        font-size: 2rem;
+        h2 {
+            color: @brand-yellow;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 2rem;
+            font-weight: 100;
+        }
+        table {
+            thead td {
+                font-weight: 700;
+                font-size: 2rem;
+            }
+        }
+    }
+    .equipment-needs {
+        padding: 4rem;
+        background: url('img/bkgd_tiles/p4_blue.png') repeat;
+        color: @brand-white;
+        font-size: 2rem;
+        h2 {
+            color: @brand-yellow;
+            text-transform: uppercase;
+            padding-left: 1.2rem;
+        }
+        p {
+            font-size: 2rem;
+            font-weight: 100;
+        }
+    }
+}
+/* Homepage Styles */
+.homepage .feature {
     min-height: 300px;
     padding: 2rem 2rem 4rem 2rem;
     color: @brand-white;
@@ -218,7 +281,8 @@ body {
         }
     }
     &#discover {
-        background: url(img/bkgd_tiles/p4_black.png) repeat;
+        background: url('/img/page_code.jpg') bottom center no-repeat;
+        background-size: cover;
         height: auto;
         position: relative;
         padding: 0;
@@ -227,36 +291,9 @@ body {
         }
 
         h2 { color: @brand-yellow; }
-        .content:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            z-index: -1;
-
-            display: block;
-            background: url('/img/page_code.jpg') bottom center no-repeat;
-            background-size: cover;
-            height: 100%;
-            min-height: 400px;
-            width: 100%;
-
-            .blur(2px);
-        }
         .content {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            z-index: 0;
-            width: 100%;
-            margin-left: 0px;
-            margin-right: 0px;
-            text-align: right;
-            padding-right: 8rem;
-            padding-top: 4rem;
-            height: 100%;
+            padding: 4rem;
+            background: rgba(56, 57, 56, 0.8);
         }
     }
     &#thrive {
@@ -388,11 +425,14 @@ footer.footer {
 
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
-footer.footer {
-  margin-left: -20px;
-  margin-right: -20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+    body {
+        margin-top: 80px;
+    }
+    footer.footer, section {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 }
 /* End Sticky Footer Styles */
