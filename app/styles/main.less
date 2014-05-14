@@ -101,6 +101,47 @@ body {
     }
 
 }
+/* Courses Styles */
+.courses {
+    .feature-intro {
+        text-align: center;
+        background: url('/img/post_alley_1440.jpg') top center no-repeat;
+        background-size: cover;
+        min-height: 300px;
+        padding: 0;
+        .content {
+            background: @brand-red-trans;
+            padding: 2rem;
+            min-height: 300px;
+        }
+        p.lead {
+            font-size: 4rem;
+            color: @brand-white;
+        }
+        h1 {
+            color: @brand-yellow;
+            font-family: @font-family-condensed;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 6rem;
+            text-shadow: 2px 2px 0 @brand-black;
+        }
+    }
+    .certificate-overview {
+        background: url('img/bkgd_tiles/p4_white.png') repeat;
+        padding: 2rem;
+
+        h2 {
+            color: @brand-black;
+            //text-shadow: 2px 2px 0 @brand-black;
+            font-family: @font-family-condensed;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
+
+/* Cost Styles */
 .cost {
     .feature-intro {
         text-align: center;
@@ -109,7 +150,7 @@ body {
         min-height: 300px;
         padding: 0;
         .content {
-            background: rgba(239, 65, 53, 0.8);
+            background: @brand-red-orange-trans;
             padding: 2rem;
             width: 100%;
             height: 100%;
@@ -164,38 +205,44 @@ body {
     }
 }
 /* Homepage Styles */
-.homepage .feature {
-    min-height: 300px;
-    padding: 2rem 2rem 4rem 2rem;
-    color: @brand-white;
-    text-shadow: 2px 2px 0 rgba(56, 57, 56, 1);
-    .btn-apply {
-        font-family: @font-family-condensed;
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
-        font-size: 2.2rem;
-        .btn-lg();
-        transition: all 0.5s ease;
-        @media screen and (max-width: @screen-sm-max) {
-            margin-top: 1.2rem;
+.homepage { 
+    .feature {
+        color: @brand-white;
+        text-shadow: 2px 2px 0 rgba(56, 57, 56, 1);
+        padding: 4rem;
+        @media (max-width: 767px) {
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
-    }
-    p.lead { font-size: 3.5rem;}
-    h2 {
-        font-family: @font-family-condensed;
-        text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: 0.2rem;
-        font-size: 4rem;
-        color: @brand-yellow;
+        .btn-apply {
+            font-family: @font-family-condensed;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            font-size: 2.2rem;
+            .btn-lg();
+            transition: all 0.5s ease;
+            @media screen and (max-width: @screen-sm-max) {
+                margin-top: 1.2rem;
+            }
+        }
+        p.lead { font-size: 3.5rem;}
+        h2 {
+            font-family: @font-family-condensed;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+            font-size: 4rem;
+            color: @brand-yellow;
+        }
     }
     .bold-serif {
         font-family: @font-family-serif;
         font-size: 3.5rem;
         font-weight: 700;
     }
-    &.webdev-intro {
-        min-height: 400px;
+    .webdev-intro {
         background: url('/img/purple_hair_1440x400.jpg') top center no-repeat;
         background-size: cover;
         padding: 6rem 4rem;
@@ -261,7 +308,7 @@ body {
             }
         }
     }
-    &#create {
+    .create {
         background: url(img/bkgd_tiles/p1_red.png) repeat;
         h2 {
             color: @brand-yellow;
@@ -270,8 +317,7 @@ body {
             font-size: 3.5rem;
         }
     }
-    &#evolve {
-        min-height: 500px;
+    .evolve {
         background: url('/img/stay_weird_1440x600.jpg') bottom center no-repeat;
         background-size: cover;
         position: relative;
@@ -280,7 +326,7 @@ body {
             font-size: 3.5rem;
         }
     }
-    &#discover {
+    .discover {
         background: url('/img/page_code.jpg') bottom center no-repeat;
         background-size: cover;
         height: auto;
@@ -296,10 +342,10 @@ body {
             background: rgba(56, 57, 56, 0.8);
         }
     }
-    &#thrive {
+    .thrive {
         background: url('img/bkgd_tiles/p1_red.png') repeat;
     }
-    &#apply-now{
+    .apply-now{
         background-image: url('/img/cafe_racer_1440x600.jpg');
         background-position: bottom center;
         background-repeat: no-repeat;
