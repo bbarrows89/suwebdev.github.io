@@ -127,6 +127,12 @@ body {
             text-shadow: 2px 2px 0 @brand-black;
         }
     }
+    .feature {
+        p {
+            font-size: 2rem;
+            font-weight: 100;
+        }
+    }
     .certificate-overview {
         background: url('img/bkgd_tiles/p4_white.png') repeat;
         padding: 2rem;
@@ -137,6 +143,76 @@ body {
             font-family: @font-family-condensed;
             font-weight: 700;
             text-transform: uppercase;
+        }
+        .glyphicon {
+            font-size: 6rem;
+        }
+        .col-md-4 {
+            padding: 3rem;
+            border-right: solid 1px @brand-black;
+            height: 100%;
+        }
+        .col-md-4:last-child {
+            border-right: none;
+        }
+        .row {
+            display: table;
+        }
+        @media (min-width: @screen-sm-max) {
+            [class*="col-"] {
+                float: none;
+                display: table-cell;
+                vertical-align: top;
+            }
+        }
+    }
+    .portfolio-based {
+        background: url('img/bkgd_tiles/p4_red.png') repeat;
+        padding: 2rem;
+        color: @brand-white;
+        text-align: center;
+    }
+    .course-listing {
+        background: url('img/bkgd_tiles/grid_yellow.png') repeat;
+        padding: 2rem;
+
+        h2 {
+            color: @brand-black;
+            //text-shadow: 2px 2px 0 @brand-black;
+            font-family: @font-family-condensed;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        h4 {
+            font-family: @font-family-condensed;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        p.lead {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+        div.course-description {
+            background: rgba(255, 255, 255, 0.4);
+            padding: 2rem;
+            margin-bottom: 1rem;
+            border-radius: 1rem;
+        }
+        .glyphicon {
+            font-size: 6rem;
+        }
+        .row {
+            display: table;
+        }
+        @media (min-width: @screen-sm-max) {
+            [class*="col-"] {
+                float: none;
+                display: table-cell;
+                vertical-align: top;
+            }
         }
     }
 }
@@ -215,6 +291,16 @@ body {
             margin-right: -20px;
             padding-left: 20px;
             padding-right: 20px;
+        }
+        a {
+            &:link, &:visited {
+                color: @brand-primary;
+                text-decoration: none;
+            }
+            &:hover, &:active {
+                color: @brand-yellow;
+                text-decoration: none;
+            }
         }
         .btn-apply {
             font-family: @font-family-condensed;
@@ -343,7 +429,10 @@ body {
         }
     }
     .thrive {
-        background: url('img/bkgd_tiles/p1_red.png') repeat;
+        background: url('img/bkgd_tiles/grid_blue.png') repeat;
+        img {
+            .box-shadow(2px 2px 1px rgba(56, 57, 56, 0.4));
+        }
     }
     .apply-now{
         background-image: url('/img/cafe_racer_1440x600.jpg');
@@ -352,7 +441,8 @@ body {
         background-size: cover;
         text-align: right;
         padding-right: 10%;
-        h2 { color: @brand-primary; }
+        color: @brand-yellow;
+        min-height: 200px;
     }
 }
 
