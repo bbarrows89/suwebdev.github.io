@@ -126,6 +126,21 @@ body {
             font-size: 6rem;
         }
     }
+    .jobs-data {
+        .content {
+            padding: 4rem;
+        }
+        .row {
+            display: table;
+        }
+        @media (min-width: @screen-sm-max) {
+            [class*="col-"] {
+                float: none;
+                display: table-cell;
+                vertical-align: top;
+            }
+        }
+    }
 }
 /* Courses Styles */
 .courses {
@@ -314,6 +329,11 @@ body {
         p {
             font-size: 2rem;
             font-weight: 100;
+        }
+        .required-equipment {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(56, 57, 56, 0.5);
         }
     }
 }
