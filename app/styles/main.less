@@ -196,7 +196,6 @@ body {
             background: rgba(255, 255, 255, 0.4);
             padding: 2rem;
             margin-bottom: 1rem;
-            border-radius: 1rem;
         }
         .glyphicon {
             font-size: 6rem;
@@ -223,14 +222,24 @@ body {
         min-height: 300px;
         padding: 0;
         .content {
-            background: @brand-red-orange-trans;
+            background: @brand-green-trans;
             padding: 2rem;
             width: 100%;
             height: 100%;
         }
         p.lead {
-            font-size: 4rem;
             color: @brand-white;
+            font-size: 5rem;
+            //font-weight: 500;
+            @media screen and (max-width: @screen-xs-min) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: @screen-sm-min) {
+                font-size: 3rem;
+            }
+            @media screen and (max-width: @screen-md-min) {
+                font-size: 4rem;
+            }
         }
         h1 {
             color: @brand-yellow;
@@ -277,7 +286,7 @@ body {
     }
 }
 /* Homepage Styles */
-.homepage { 
+.homepage {
     .feature {
         color: @brand-white;
         padding: 4rem;
@@ -322,6 +331,52 @@ body {
         font-family: @font-family-serif;
         font-size: 3.5rem;
         font-weight: 700;
+    }
+    .webdev-title {
+        background: url('/img/classroom_computer.jpg') top center no-repeat;
+        background-size: cover;
+        text-align: center;
+        padding: 0;
+        .content {
+            background: @brand-red-orange-trans;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 8rem;
+            color: @brand-yellow;
+            font-family: @font-family-condensed;
+            font-weight: 700;
+            text-transform: uppercase;
+            @media screen and (max-width: @screen-xs-min) {
+                font-size: 4rem;
+            }
+            @media screen and (max-width: @screen-md-min) {
+                font-size: 8rem;
+            }
+            small {
+                color: @brand-white;
+                white-space: nowrap;
+                @media screen and (max-width: @screen-xs-min) {
+                    font-size: 2rem;
+                }
+                @media screen and (max-width: @screen-sm-min) {
+                    font-size: 3rem;
+                }
+            }
+        }
+        p.lead {
+            color: @brand-white;
+            font-size: 5rem;
+            @media screen and (max-width: @screen-xs-min) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: @screen-sm-min) {
+                font-size: 3rem;
+            }
+            @media screen and (max-width: @screen-md-min) {
+                font-size: 4rem;
+            }
+        }
     }
     .webdev-intro {
         background: url('/img/purple_hair_1440x400.jpg') top center no-repeat;
@@ -425,7 +480,7 @@ body {
         }
     }
     .thrive {
-        background: url('img/bkgd_tiles/grid_blue.png') repeat;
+        background: url('img/bkgd_tiles/grid_green.png') repeat;
         img {
             .box-shadow(2px 2px 1px rgba(56, 57, 56, 0.4));
         }
@@ -436,9 +491,26 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         text-align: right;
-        padding-right: 10%;
-        color: @brand-yellow;
         min-height: 200px;
+        .well {
+            background-color: rgba(56, 57, 56, 0.6);
+            border: none;
+            border-radius: 0;
+        }
+        p.bold-serif {
+            font-size: 6rem;
+        }
+        a {
+            font-family: @font-family-condensed;
+            text-transform: uppercase;
+
+            &:link, &:visited {
+                color: @brand-white;
+            }
+            &:hover, &:active {
+                color: @brand-white;
+            }
+        }
     }
 }
 
