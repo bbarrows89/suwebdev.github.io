@@ -86,6 +86,9 @@ body {
             .btn-lg();
             margin-right: 3rem;
             transition: all 0.5s ease;
+            &:hover, &:active {
+                color: @brand-yellow;
+            }
             @media (max-width: @screen-md-min) {
                 margin-top: 1.2rem;
                 margin-right: 1rem;
@@ -99,6 +102,8 @@ body {
             font-size: 2.5rem;
             &:hover, &:focus {
                 color: @brand-blue;
+                z-index: 42;
+                transform: scale(1.05,1.05);
             }
             @media (max-width: @screen-md-min) {
                 margin: 2rem 0 0 0;
