@@ -12,7 +12,6 @@
     color: #000;
     padding: 0.2em 0;
 }
-
 /* Space out content a bit */
 body {
     background: url('img/paper_texture_04.jpg') repeat center center scroll #fff;
@@ -226,7 +225,7 @@ body {
         padding: 0;
         .content {
             background: @brand-blue-trans;
-            padding: 2rem;
+            padding: 1rem;
             min-height: 200px;
         }
         p.lead {
@@ -279,8 +278,59 @@ body {
                 vertical-align: top;
             }
         }
+        h1, h2, h3, h4 {
+            font-family: @font-family-condensed;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 2rem;
+        }
+        .job-stat-number {
+            font-size: 6rem;
+            font-family: @font-family-condensed;
+            font-weight: 200;
+        }
+        .job-stat-description {
+            font-size: 2rem;
+        }
+        .stats-list {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+            li {
+                margin: 1rem 0;
+                padding: 2rem;
+                background: @brand-yellow-trans;
+            }
+        }
+        .national-stats {
+            padding: 1rem 2rem 2rem 2rem;
+            background: rgba(56, 57, 56, 0.2);
+        }
+    }
+    .references {
+        background: url('img/bkgd_tiles/p4_red.png') repeat;
+        color: @brand-white;
+        padding: 2rem;
+        a {
+            &:hover, &:active, &:link, &:visited {
+                color: @brand-yellow;
+                text-decoration: none;
+            }
+        }
+        ul.reference-list {
+            li {
+                margin-left: 2rem;
+                padding-left: 2rem;
+                text-indent: -2rem;
+                font-size: 1rem;
+                color: @brand-white-trans;
+            }
+        }
     }
 }
+
 /* Courses Styles */
 .courses {
     .feature-intro {
