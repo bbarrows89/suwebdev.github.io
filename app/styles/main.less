@@ -285,6 +285,10 @@ body {
             font-weight: 700;
             text-transform: uppercase;
         }
+        .big-serif {
+            font-family: @font-family-serif;
+            font-weight: 700;
+        }
         p {
             font-size: 2rem;
         }
@@ -309,6 +313,100 @@ body {
         .national-stats {
             padding: 1rem 2rem 2rem 2rem;
             background: rgba(56, 57, 56, 0.2);
+        }
+    }
+    .testimonials {
+        background: url('img/bkgd_tiles/grid_green.png') repeat;
+        h2 {
+            margin: 0;
+            background: url('img/bkgd_tiles/grid_yellow.png') repeat;
+            padding: 1rem;
+            font-family: @font-family-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            color: @brand-red;
+        }
+        .carousel {
+            .item {
+                min-height: 100px;
+                font-size: 3.5rem;
+                margin-top: 10%;
+                .long{
+                    font-size: 2.5rem;
+                }
+                .short{
+                        font-size: 4rem;
+                    }
+                p {
+                    font-size: 2rem;
+                }
+                @media (max-width: @screen-md-min) {
+                    min-height: 100px
+                }
+                @media (max-width: @screen-sm-min) {
+                    font-size: 2.5rem;
+                    min-height: 500px;
+                    .long{
+                        font-size: 2rem;
+                    }
+                    .short{
+                        font-size: 3rem;
+                    }
+                    p {
+                        font-size: 2rem;
+                    }
+                }
+                @media (max-width: @screen-xs-min) {
+                    font-size: 2.5rem;
+                    min-height: 500px;
+                    .long{
+                        font-size: 2rem;
+                    }
+                    .short{
+                        font-size: 3rem;
+                    }
+                    p {
+                        font-size: 2rem;
+                    }
+                }
+                .carousel-caption {
+                    left: 10%;
+                    right: 10%;
+                    bottom: 20%;
+                    padding-bottom: 0;
+
+                    .big-serif {
+                        font-family: @font-family-serif;
+                        font-weight: 700;
+                        color: @brand-white;
+                    }
+                    a {
+                        &:link, &:visited, &:hover, &:active {
+                            color: @brand-yellow;
+                            text-decoration: none;
+                        }
+                    }
+                    blockquote {
+                        border: none;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    p {
+                        text-align: left;
+                        margin-top: 10%;
+                        text-shadow: none;
+                    }
+                }
+            }
+            .carousel-control {
+                &.right, &.left {
+                    background: none;
+                }
+            }
+            .carousel-indicators {
+                bottom: 0px;
+            }
         }
     }
     .references {
@@ -386,6 +484,11 @@ body {
         p {
             font-size: 2rem;
             font-weight: 100;
+        }
+        .big-serif {
+            font-family: @font-family-serif;
+            font-size: 3rem;
+            font-weight: 700;
         }
     }
     .certificate-overview {
