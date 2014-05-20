@@ -645,6 +645,24 @@ body {
             letter-spacing: 0.2rem;
             font-size: 4rem;
             color: @brand-yellow;
+            a {
+                margin-left: -1rem;
+                padding-left: 1rem;
+                &:link, &:visited {
+                    color: @brand-yellow;
+                    span.susymbol {
+                        transition: all 0.5s ease;
+                    }
+                }
+                &:active, &:hover {
+                    background: @brand-yellow;
+                    color: @brand-red;
+                    span.susymbol {
+                        margin-left: 3rem;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
         }
     }
     .bold-serif {
