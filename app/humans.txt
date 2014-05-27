@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <Shawn Rider> -- <Developer> -- <@shawnr>
+    <Eli Christopher> -- <Design Review>
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    Pho devstack
