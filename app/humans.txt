@@ -12,4 +12,11 @@
 
 # TECHNOLOGY COLOPHON
 
-    Pho devstack
+    Yeoman
+    Bower
+    Grunt
+    LESS
+    CSS3
+    HTML5
+    Modernizr
+    Google Analytics
