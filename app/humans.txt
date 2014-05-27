@@ -2,13 +2,33 @@
 # The humans responsible & technology colophon
 
 # TEAM
+    
+    Developer: Shawn Rider
+    Twitter: @shawnr
+    Location: Seattle, WA
+    
+    Design Oversight: Eli Christopher
+    Location: Seattle, WA
 
-    <Shawn Rider> -- <Developer> -- <@shawnr>
-    <Eli Christopher> -- <Design Review>
+    Language and De-Capitalization: Rick Fehrenbacher
+    Location: Seattle, WA
 
 # THANKS
 
-    <name>
+    Design Input: Amanda Lodi
+    Location: Seattle, WA
+    
+    UI/UX Input: Erin Reisling
+    Location: Seattle, WA
+
+    Review and Feedback: Jayme Jacobson
+    Location: Seattle, WA
+
+    Review and Feedback: Jane Snare
+    Location: Seattle, WA
+
+    Review, Feedback, Support: Elizabeth Wallin
+    Location: Seattle, WA
 
 # TECHNOLOGY COLOPHON
 
@@ -20,3 +40,6 @@
     HTML5
     Modernizr
     Google Analytics
+    Bootstrap
+    FontAwesome
+    Glyphicons
