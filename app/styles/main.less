@@ -14,15 +14,10 @@
 }
 /* Space out content a bit */
 body {
-    background: url('img/paper_texture_04.jpg') repeat center center scroll #fff;
-    .su-logo {
-        background: url('img/su_wordmark_redblk_50.png') no-repeat left center;
-        background-size: contain;
-        min-height: 50px;
-        min-width: 177px;
-        display: inline-block;
-        text-indent: -10000px;
-    }
+    .at2x('img/paper_texture_04.jpg', auto);
+    background-repeat: repeat;
+    background-position: center center; 
+    background-color: #fff;
     .color-blue { color: @brand-blue; }
     .color-yellow { color: @brand-yellow;}
     .color-green { color: @brand-green; }
@@ -54,8 +49,12 @@ body {
         font-family: @font-family-condensed;
         font-size: 2.8em;
         color: @brand-red;
-        text-indent: -1000px;
-        background: url('/styles/img/su_cope_wordmark.png') no-repeat left center;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        .at2x('/styles/img/su_cope_wordmark.png', contain);
+        background-repeat: no-repeat;
+        background-position: left center;
         background-size: contain;
         min-height: 60px;
         min-width: 200px;
@@ -122,7 +121,9 @@ body {
 .faq {
     .feature-intro {
         text-align: center;
-        background: url('/img/10th_ave_1440.jpg') center center no-repeat;
+        .at2x('/img/10th_ave.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
         background-size: cover;
         min-height: 200px;
         padding: 0;
@@ -169,8 +170,11 @@ body {
     }
     .faq-list {
         padding: 2rem;
-        background: url('img/bkgd_tiles/p4_black.png') repeat;
+        .at2x('img/bkgd_tiles/p4_black.png');
+        background-repeat: repeat;
+        background-color: @brand-black;
         color: @brand-white;
+        border-bottom: solid 1rem @brand-yellow;
         h2 {
             color: @brand-yellow;
             font-family: @font-family-condensed;
@@ -221,7 +225,9 @@ body {
 .careers {
     .feature-intro {
         text-align: center;
-        background: url('/img/busker_1440.jpg') top center no-repeat;
+        .at2x('/img/busker.jpg', cover);
+        background-position: top center;
+        background-repeat: no-repeat;
         background-size: cover;
         min-height: 200px;
         padding: 0;
@@ -316,10 +322,12 @@ body {
         }
     }
     .testimonials {
-        background: url('img/bkgd_tiles/grid_green.png') repeat;
+        .at2x('img/bkgd_tiles/grid_green.png');
+        background-repeat: repeat;
+        background-color: @brand-green;
         h2 {
             margin: 0;
-            background: url('img/bkgd_tiles/grid_yellow.png') repeat;
+            background-color: @brand-yellow;
             padding: 1rem;
             font-family: @font-family-serif;
             font-size: 3rem;
@@ -415,7 +423,9 @@ body {
         }
     }
     .references {
-        background: url('img/bkgd_tiles/p4_red.png') repeat;
+        .at2x('img/bkgd_tiles/p4_red.png');
+        background-repeat:  repeat;
+        background-color: @brand-red;
         color: @brand-white;
         padding: 2rem;
         a {
@@ -440,7 +450,9 @@ body {
 .courses {
     .feature-intro {
         text-align: center;
-        background: url('/img/post_alley_1440.jpg') top center no-repeat;
+        .at2x('/img/post_alley.jpg', cover);
+        background-top: top center;
+        background-repeat: no-repeat;
         background-size: cover;
         min-height: 200px;
         padding: 0;
@@ -497,7 +509,9 @@ body {
         }
     }
     .certificate-overview {
-        background: url('img/bkgd_tiles/p4_white.png') repeat;
+        .at2x('img/bkgd_tiles/p4_white.png');
+        background-repeat: repeat;
+        background-color: @brand-white;
         padding: 2rem;
 
         h2 {
@@ -529,13 +543,17 @@ body {
         }
     }
     .portfolio-based {
-        background: url('img/bkgd_tiles/black.png') repeat;
+        .at2x('img/bkgd_tiles/black.png');
+        background-repeat: repeat;
+        background-color: @brand-black;
         padding: 2rem;
         color: @brand-white;
         text-align: center;
     }
     .course-listing {
-        background: url('img/bkgd_tiles/grid_yellow.png') repeat;
+        .at2x('img/bkgd_tiles/grid_yellow.png');
+        background-repeat: repeat;
+        background-color: @brand-yellow;
         padding: 2rem;
         .content {
             padding: 4rem;
@@ -588,7 +606,9 @@ body {
 .cost {
     .feature-intro {
         text-align: center;
-        background: url('/img/bag_boots_1440.jpg') top center no-repeat;
+        .at2x('/img/bag_boots.jpg', cover);
+        background-position: top center;
+        background-repeat: no-repeat;
         background-size: cover;
         min-height: 200px;
         padding: 0;
@@ -645,7 +665,9 @@ body {
     }
     .cost-breakdown {
         padding: 4rem;
-        background: url('img/bkgd_tiles/p4_black.png') repeat;
+        .at2x('img/bkgd_tiles/p4_black.png');
+        background-repeat: repeat;
+        background-color: @brand-black;
         color: @brand-white;
         font-size: 2rem;
         h2 {
@@ -665,7 +687,9 @@ body {
     }
     .equipment-needs {
         padding: 4rem;
-        background: url('img/bkgd_tiles/p4_blue.png') repeat;
+        .at2x('img/bkgd_tiles/p4_blue.png');
+        background-repeat: repeat;
+        background-color: @brand-blue;
         color: @brand-white;
         font-size: 2rem;
         h2 {
@@ -791,7 +815,9 @@ body {
         }
     }
     .webdev-title {
-        background: url('/img/classroom_computer.jpg') top center no-repeat;
+        .at2x('/img/classroom_computer.jpg', cover);
+        background-position: top center;
+        background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
         padding: 0;
@@ -816,7 +842,9 @@ body {
         }
     }
     .webdev-intro {
-        background: url('/img/purple_hair_1440x400.jpg') top center no-repeat;
+        .at2x('/img/purple_hair_short.jpg', cover);
+        background-position: top center;
+        background-repeat: no-repeat;
         background-size: cover;
         padding: 6rem 4rem;
         p.word-tag {
@@ -854,10 +882,16 @@ body {
         }
         .content {
             padding: 4rem;
+            img {
+                width: 100% !important;
+                height: auto !important;
+            }
         }
     }
     .evolve {
-        background: url('/img/stay_weird_1440x600.jpg') bottom center no-repeat;
+        .at2x('/img/stay_weird_mid.jpg', cover);
+        background-position: bottom center;
+        background-repeat: no-repeat;
         background-size: cover;
         position: relative;
         color: @brand-white;
@@ -867,7 +901,9 @@ body {
         }
     }
     .discover {
-        background: url('/img/page_code.jpg') bottom center no-repeat;
+        .at2x('/img/page_code.jpg', cover);
+        background-position: bottom center;
+        background-repeat: no-repeat;
         background-size: cover;
         height: auto;
         position: relative;
@@ -879,7 +915,9 @@ body {
         }
     }
     .thrive {
-        background: url('img/bkgd_tiles/grid_green.png') repeat;
+        .at2x('img/bkgd_tiles/grid_green.png');
+        background-repeat: repeat;
+        background-color: @brand-green;
         img {
             .box-shadow(2px 2px 1px rgba(56, 57, 56, 0.4));
         }
@@ -888,7 +926,7 @@ body {
         }
     }
     .apply-now{
-        background-image: url('/img/cafe_racer_1440x600.jpg');
+        .at2x('/img/cafe_racer_mid.jpg', cover);
         background-position: bottom center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -925,7 +963,9 @@ body {
 footer.footer {
     padding: 4em;
     color: @brand-white;
-    background: url('img/bkgd_tiles/black.png') repeat @brand-black;
+    .at2x('img/bkgd_tiles/black.png');
+    background-repeat: repeat;
+    background-color: @brand-black;
     p.su-wordmark {
         padding: 2em 0 0 3.5em;
         a img {
