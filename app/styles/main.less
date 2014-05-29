@@ -820,11 +820,9 @@ body {
         background-size: cover;
         text-align: center;
         padding: 0;
-        h1 {
-            color: @brand-yellow;
-        }
+
         .content {
-            background: @brand-red-trans;
+            background: @brand-yellow-trans;
             padding: 2rem;
         }
 
@@ -844,17 +842,13 @@ body {
         }
     }
     .webdev-intro {
-        .at2x('/img/la_wide_lg.jpg', cover);
+        .at2x('/img/stay_weird_mid.jpg', cover);
         background-position: middle center;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 6rem 4rem;
-        min-height: 500px;
+        min-height: 400px;
         p.word-tag {
-            text-align: right;
-            @media (max-width: @screen-xs-max) {
-                text-align: left;
-            }
             a {
                 white-space: nowrap;
                 font-family: @font-family-condensed;
@@ -877,7 +871,7 @@ body {
                     }
                 }
                 &:active, &:hover {
-                    background: @brand-red-trans;
+                    background: @brand-yellow-trans;
                     span.susymbol {
                         margin-left: 3rem;
                         margin-right: 0;
@@ -901,15 +895,20 @@ body {
         }
     }
     .evolve {
-        .at2x('/img/stay_weird_mid.jpg', cover);
-        background-position: bottom center;
+        .at2x('/img/la_wide_lg.jpg', cover);
+        background-position: top left;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
         color: @brand-white;
         min-height: 400px;
+
         .content {
-            padding: 4rem;
+            padding: 0 2rem;
+            background-color: rgba(56,57,56, 0.6);
+            @media (max-width: @screen-xs-max) {
+                margin-top: 14rem;
+            }
         }
     }
     .discover {
