@@ -841,12 +841,18 @@ body {
         }
     }
     .webdev-intro {
-        .at2x('/img/purple_hair_short.jpg', cover);
+        .at2x('/img/lakeisha_out_mid.jpg', cover);
         background-position: top center;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 6rem 4rem;
+        min-height: 500px;
         p.word-tag {
+            text-align: right;
+
+            @media (max-width: @screen-xs-max) {
+                margin-left: 6rem;
+            }
             a {
                 white-space: nowrap;
                 font-family: @font-family-condensed;
@@ -863,11 +869,16 @@ body {
                 }
                 &:link, &:visited {
                     color: @brand-white;
+                    span.susymbol {
+                        margin-left: 0;
+                        margin-right: 3rem;
+                    }
                 }
                 &:active, &:hover {
                     background: rgba(239, 65, 53, 0.8);
                     span.susymbol {
                         margin-left: 3rem;
+                        margin-right: 0;
                         transition: all 0.5s ease;
                     }
                 }
