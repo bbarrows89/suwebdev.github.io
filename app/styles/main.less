@@ -820,8 +820,11 @@ body {
         background-size: cover;
         text-align: center;
         padding: 0;
+        h1 {
+            color: @brand-yellow;
+        }
         .content {
-            background: @brand-yellow-trans;
+            background: @brand-red-trans;
             padding: 2rem;
         }
 
@@ -841,17 +844,16 @@ body {
         }
     }
     .webdev-intro {
-        .at2x('/img/lakeisha_out_mid.jpg', cover);
-        background-position: top center;
+        .at2x('/img/la_wide_lg.jpg', cover);
+        background-position: middle center;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 6rem 4rem;
         min-height: 500px;
         p.word-tag {
             text-align: right;
-
             @media (max-width: @screen-xs-max) {
-                margin-left: 6rem;
+                text-align: left;
             }
             a {
                 white-space: nowrap;
@@ -875,7 +877,7 @@ body {
                     }
                 }
                 &:active, &:hover {
-                    background: rgba(239, 65, 53, 0.8);
+                    background: @brand-red-trans;
                     span.susymbol {
                         margin-left: 3rem;
                         margin-right: 0;
