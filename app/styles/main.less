@@ -198,7 +198,7 @@ body {
             border: 1px solid @brand-black;
             margin-bottom: 2rem;
             color: @brand-white-trans;
-            font-weight: 200;
+            font-weight: 300;
             button {
                 color: @brand-yellow;
                 transition: all 0.5s ease;
@@ -212,6 +212,9 @@ body {
                 &:active, &:hover {
                     color: @brand-white;
                     text-decoration: none;
+                }
+                &:focus {
+                    outline: 0;
                 }
             }
             div {
@@ -500,7 +503,7 @@ body {
     .feature {
         p {
             font-size: 2rem;
-            font-weight: 100;
+            font-weight: 300;
         }
         .big-serif {
             font-family: @font-family-serif;
@@ -527,6 +530,9 @@ body {
             padding: 3rem;
             border-right: solid 1px @brand-black;
             height: 100%;
+            @media (max-width: @screen-sm-max) {
+                border: none;
+            }
         }
         .col-md-4:last-child {
             border-right: none;
@@ -549,6 +555,11 @@ body {
         padding: 2rem;
         color: @brand-white;
         text-align: center;
+        p {
+            color: @brand-white-trans;
+            font-weight: 300;
+            font-size: 2.2rem;
+        }
     }
     .course-listing {
         .at2x('img/bkgd_tiles/grid_yellow.png');
@@ -676,7 +687,8 @@ body {
         }
         p {
             font-size: 2rem;
-            font-weight: 100;
+            font-weight: 300;
+            color: @brand-white-trans;
         }
         table {
             thead td {
@@ -699,7 +711,7 @@ body {
         }
         p {
             font-size: 2rem;
-            font-weight: 100;
+            font-weight: 300;
         }
         .required-equipment {
             margin-top: 2rem;
@@ -843,7 +855,7 @@ body {
     }
     .webdev-intro {
         .at2x('/img/stay_weird_mid.jpg', cover);
-        background-position: middle center;
+        background-position: bottom center;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 6rem 4rem;
@@ -930,7 +942,7 @@ body {
         background-repeat: repeat;
         background-color: @brand-green;
         img {
-            .box-shadow(2px 2px 1px rgba(56, 57, 56, 0.4));
+            border: solid 2px @brand-black;
         }
         .content {
             padding: 4rem;
@@ -1043,7 +1055,7 @@ body { margin-top: 100px; }
   /* Negative indent footer by it's height */
   margin: 0 auto -340px;
   @media (max-width: @screen-sm-max) {
-        margin: 0 auto -700px;
+        margin: 0 auto -700px auto;
   }
 }
 
@@ -1055,17 +1067,19 @@ footer.footer {
         height: 700px;
   }
 }
+/*Fix annoying gutter problem*/
+.row { margin:0;}
 
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
     body {
         margin-top: 80px;
     }
-    footer.footer, section {
+    /*footer.footer, section {
       margin-left: -20px;
       margin-right: -20px;
       padding-left: 20px;
       padding-right: 20px;
-    }
+    }*/
 }
 /* End Sticky Footer Styles */
