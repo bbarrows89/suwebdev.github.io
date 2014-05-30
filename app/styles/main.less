@@ -223,11 +223,25 @@ body {
                 &:focus {
                     outline: 0;
                 }
+                @media (max-width: @screen-sm-min) {
+                    font-size: 2rem;
+                }
             }
             div {
                 margin-left: 4rem;
                 font-size: 2rem;
             }
+            @media (max-width: @screen-sm-min) {
+                padding: 0 5rem;
+            }
+        }
+    }
+    section {
+        @media (max-width: @screen-sm-min) {
+            margin-right: -5rem;
+            margin-left: -5rem;
+            padding-right: 5rem;
+            padding-left: 5rem;
         }
     }
 }
@@ -454,6 +468,14 @@ body {
             }
         }
     }
+    section {
+        @media (max-width: @screen-sm-min) {
+            margin-right: -5rem;
+            margin-left: -5rem;
+            padding-right: 5rem;
+            padding-left: 5rem;
+        }
+    }
 }
 
 /* Courses Styles */
@@ -618,6 +640,14 @@ body {
             }
         }
     }
+    section {
+        @media (max-width: @screen-sm-min) {
+            margin-right: -5rem;
+            margin-left: -5rem;
+            padding-right: 5rem;
+            padding-left: 5rem;
+        }
+    }
 }
 
 /* Cost Styles */
@@ -726,18 +756,20 @@ body {
             background: rgba(56, 57, 56, 0.5);
         }
     }
+    section {
+        @media (max-width: @screen-sm-min) {
+            margin-right: -5rem;
+            margin-left: -5rem;
+            padding-right: 5rem;
+            padding-left: 5rem;
+        }
+    }
 }
 /* Homepage Styles */
 .homepage {
     .feature {
         color: @brand-white;
         padding: 4rem;
-        @media (max-width: 767px) {
-            margin-left: -20px;
-            margin-right: -20px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
         h1 {
             font-size: 8rem;
             color: @brand-red;
@@ -985,6 +1017,14 @@ body {
             padding: 4rem;
         }
     }
+    section {
+        @media (max-width: @screen-sm-min) {
+            margin-right: -5rem;
+            margin-left: -5rem;
+            padding-right: 5rem;
+            padding-left: 5rem;
+        }
+    }
 }
 
 
@@ -1084,7 +1124,7 @@ footer.footer {
     body {
         margin-top: 80px;
     }
-    footer.footer, section {
+    footer.footer {
       margin-left: -5rem;
       margin-right: -5rem;
       padding-left: 5rem;
