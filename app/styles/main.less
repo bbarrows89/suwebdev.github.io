@@ -42,8 +42,15 @@ body {
     font-weight: 700;
     font-size: 18px;
     margin: 0;
+    transition: top 0.2s ease-in-out;
     .navbar-collapse, .navbar-form {
         border-color: @brand-black;
+    }
+    &.nav-down {
+        top: 0;
+    }
+    &.nav-up {
+        top: -100px;
     }
     .navbar-brand {
         font-family: @font-family-condensed;
