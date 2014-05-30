@@ -1080,15 +1080,15 @@ footer.footer {
 .row { margin:0;}
 
 /* Lastly, apply responsive CSS fixes as necessary */
-@media (max-width: 767px) {
+@media (max-width: @screen-sm-min) {
     body {
         margin-top: 80px;
     }
-    footer.footer {
-      margin-left: -20px;
-      margin-right: -20px;
-      padding-left: 20px;
-      padding-right: 20px;
+    footer.footer, section {
+      margin-left: -5rem;
+      margin-right: -5rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
     }
 }
 /* End Sticky Footer Styles */
