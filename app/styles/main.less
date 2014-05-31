@@ -8,15 +8,15 @@
 
 .browsehappy {
     margin: 0.2em 0;
-    background: #e8e8e8;
-    color: #000;
+    background: @brand-red;
+    color: @brand-white;
     padding: 0.2em 0;
 }
 /* Space out content a bit */
 body {
     .at2x('img/paper_texture_04.jpg', auto);
     background-repeat: repeat;
-    background-position: center center; 
+    background-position: center center;
     background-color: #fff;
     .color-blue { color: @brand-blue; }
     .color-yellow { color: @brand-yellow;}
@@ -81,6 +81,9 @@ body {
                     background: transparent;
                 }
             }
+        }
+        @media (max-width: @screen-md-min){
+            padding-left: 2rem;
         }
         button {
             margin-top: 20px;
@@ -236,14 +239,14 @@ body {
             }
         }
     }
-    section {
-        @media (max-width: @screen-sm-min) {
-            margin-right: -5rem;
-            margin-left: -5rem;
-            padding-right: 5rem;
-            padding-left: 5rem;
-        }
-    }
+    // section {
+    //     @media (max-width: @screen-sm-min) {
+    //         margin-right: -5rem;
+    //         margin-left: -5rem;
+    //         padding-right: 5rem;
+    //         padding-left: 5rem;
+    //     }
+    // }
 }
 /* Careers Styles */
 .careers {
@@ -468,14 +471,14 @@ body {
             }
         }
     }
-    section {
-        @media (max-width: @screen-sm-min) {
-            margin-right: -5rem;
-            margin-left: -5rem;
-            padding-right: 5rem;
-            padding-left: 5rem;
-        }
-    }
+    // section {
+    //     @media (max-width: @screen-sm-min) {
+    //         margin-right: -5rem;
+    //         margin-left: -5rem;
+    //         padding-right: 5rem;
+    //         padding-left: 5rem;
+    //     }
+    // }
 }
 
 /* Courses Styles */
@@ -640,14 +643,14 @@ body {
             }
         }
     }
-    section {
-        @media (max-width: @screen-sm-min) {
-            margin-right: -5rem;
-            margin-left: -5rem;
-            padding-right: 5rem;
-            padding-left: 5rem;
-        }
-    }
+    // section {
+    //     @media (max-width: @screen-sm-min) {
+    //         margin-right: -5rem;
+    //         margin-left: -5rem;
+    //         padding-right: 5rem;
+    //         padding-left: 5rem;
+    //     }
+    // }
 }
 
 /* Cost Styles */
@@ -664,6 +667,9 @@ body {
             background: @brand-green-trans;
             padding: 2rem;
             min-height: 200px;
+            @media (max-width: @screen-sm-min) {
+                letter-spacing: 2px
+            }
         }
         p.lead {
             color: @brand-white;
@@ -756,14 +762,14 @@ body {
             background: rgba(56, 57, 56, 0.5);
         }
     }
-    section {
-        @media (max-width: @screen-sm-min) {
-            margin-right: -5rem;
-            margin-left: -5rem;
-            padding-right: 5rem;
-            padding-left: 5rem;
-        }
-    }
+    // section {
+    //     @media (max-width: @screen-sm-min) {
+    //         margin-right: -5rem;
+    //         margin-left: -5rem;
+    //         padding-right: 5rem !important;
+    //         padding-left: 5rem !important;
+    //     }
+    // }
 }
 /* Homepage Styles */
 .homepage {
@@ -874,7 +880,10 @@ body {
 
         .content {
             background: @brand-yellow-trans;
-            padding: 2rem;
+            padding: 4rem;
+            @media (max-width: @screen-sm-min) {
+                letter-spacing: 2px
+            }
         }
 
         p.lead {
@@ -893,12 +902,17 @@ body {
         }
     }
     .webdev-intro {
-        .at2x('/img/stay_weird_mid.jpg', cover);
-        background-position: bottom center;
+        //.at2x('/img/stay_weird_mid.jpg', cover);
+        .at2x('/img/computer_coffee.jpg', cover);
+        background-position: top left;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 6rem 4rem;
         min-height: 400px;
+        .content {
+            padding: 2rem;
+            background: rgba(56, 57, 56, 0.4);
+        }
         p.word-tag {
             a {
                 white-space: nowrap;
@@ -984,7 +998,7 @@ body {
             border: solid 2px @brand-black;
         }
         .content {
-            padding: 4rem;
+            padding: 2rem;
         }
     }
     .apply-now{
@@ -1017,14 +1031,14 @@ body {
             padding: 4rem;
         }
     }
-    section {
-        @media (max-width: @screen-sm-min) {
-            margin-right: -5rem;
-            margin-left: -5rem;
-            padding-right: 5rem;
-            padding-left: 5rem;
-        }
-    }
+    // section {
+    //     @media (max-width: @screen-sm-min) {
+    //         margin-right: -5rem;
+    //         margin-left: -5rem;
+    //         padding-right: 5rem;
+    //         padding-left: 5rem;
+    //     }
+    // }
 }
 
 
@@ -1124,11 +1138,12 @@ footer.footer {
     body {
         margin-top: 80px;
     }
-    footer.footer {
-      margin-left: -5rem;
-      margin-right: -5rem;
-      padding-left: 5rem;
-      padding-right: 5rem;
-    }
+    // footer.footer {
+    //   margin-left: -1rem;
+    //   margin-right: -1rem;
+    //   padding-left: 5rem;
+    //   padding-right: 1rem;
+    // }
 }
+html { overflow-x: hidden;}
 /* End Sticky Footer Styles */
