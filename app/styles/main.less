@@ -11,6 +11,12 @@
     background: @brand-red;
     color: @brand-white;
     padding: 0.2em 0;
+    text-align: center;
+    a {
+        &:link, &:hover, &:active, &:visited {
+            color: @brand-yellow;
+        }
+    }
 }
 /* Space out content a bit */
 body {
@@ -1148,4 +1154,4 @@ footer.footer {
 html { overflow-x: hidden;}
 /* End Sticky Footer Styles */
 
-@import 'ltie9';
+@import 'iefix';
