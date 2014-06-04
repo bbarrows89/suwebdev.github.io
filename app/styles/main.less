@@ -1040,6 +1040,12 @@ body {
             }
         }
     }
+    section, footer {
+        @media (max-width: @screen-sm-min) {
+            margin-right: -10px;
+            padding-right: 10px;
+        }
+    }
 }
 
 
@@ -1051,6 +1057,9 @@ footer.footer {
     .at2x('img/bkgd_tiles/black.png');
     background-repeat: repeat;
     background-color: @brand-black;
+    @media (max-width: @screen-sm-min) {
+        padding: 2rem;
+    }
     p.su-wordmark {
         padding: 2em 0 0 3.5em;
         a img {
