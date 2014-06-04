@@ -371,6 +371,9 @@ body {
         .at2x('img/bkgd_tiles/grid_green.png');
         background-repeat: repeat;
         background-color: @brand-green;
+        @media (max-width: @screen-sm-min) {
+            display: none; /* Temp disabled until more time to debug on mobile.*/
+        }
         h2 {
             margin: 0;
             background-color: @brand-yellow;
