@@ -211,6 +211,9 @@ body {
         }
         .content {
             padding: 2rem;
+            @media (max-width: @screen-sm-min) {
+                padding: 1rem;
+            }
         }
         .faq-wrapper {
             background: @brand-black-trans;
@@ -263,6 +266,10 @@ body {
         background-size: cover;
         min-height: 200px;
         padding: 0;
+        @media (max-width: @screen-sm-min) {
+            margin-right: -5rem;
+            padding-right: 5rem;
+        }
         .content {
             background: @brand-blue-trans;
             padding: 1rem;
@@ -305,8 +312,15 @@ body {
         }
     }
     .jobs-data {
+        @media (max-width: @screen-sm-min) {
+            margin-right: -5rem;
+            padding-right: 5rem;
+        }
         .content {
             padding: 4rem;
+            @media (max-width: @screen-sm-min) {
+                padding: 1rem;
+            }
         }
         .row {
             display: table;
@@ -354,6 +368,10 @@ body {
         }
     }
     .testimonials {
+        @media (max-width: @screen-sm-min) {
+            margin-right: -5rem;
+            padding-right: 5rem;
+        }
         .at2x('img/bkgd_tiles/grid_green.png');
         background-repeat: repeat;
         background-color: @brand-green;
@@ -460,6 +478,10 @@ body {
         background-color: @brand-red;
         color: @brand-white;
         padding: 2rem;
+        @media (max-width: @screen-sm-min) {
+            margin-right: -5rem;
+            padding-right: 5rem;
+        }
         a {
             &:hover, &:active, &:link, &:visited {
                 color: @brand-yellow;
@@ -717,6 +739,9 @@ body {
         background-color: @brand-black;
         color: @brand-white;
         font-size: 2rem;
+        @media (max-width: @screen-sm-min) {
+            padding: 1rem;
+        }
         h2 {
             color: @brand-yellow;
             text-transform: uppercase;
@@ -746,10 +771,16 @@ body {
         background-color: @brand-blue;
         color: @brand-white;
         font-size: 2rem;
+        @media (max-width: @screen-sm-min) {
+            padding: 1rem;
+        }
         h2 {
             color: @brand-yellow;
             text-transform: uppercase;
             padding-left: 1.2rem;
+            @media (max-width: @screen-sm-min) {
+                padding: 0rem;
+            }
         }
         p {
             font-size: 2rem;
