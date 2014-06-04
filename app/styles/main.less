@@ -767,6 +767,9 @@ body {
     .feature {
         color: @brand-white;
         padding: 4rem;
+        @media (max-width: @screen-sm-min) {
+            padding: 2rem;
+        }
         h1 {
             font-size: 8rem;
             color: @brand-red;
@@ -948,6 +951,9 @@ body {
                 width: 100% !important;
                 height: auto !important;
             }
+            @media (max-width: @screen-sm-min) {
+                padding: 0;
+            }
         }
     }
     .evolve {
@@ -965,6 +971,9 @@ body {
             @media (max-width: @screen-xs-max) {
                 margin-top: 14rem;
             }
+            @media (max-width: @screen-sm-min) {
+                padding: 0;
+            }
         }
     }
     .discover {
@@ -979,6 +988,9 @@ body {
         .content {
             padding: 4rem;
             background: rgba(56, 57, 56, 0.8);
+            @media (max-width: @screen-sm-min) {
+                padding: 1rem;
+            }
         }
     }
     .thrive {
@@ -990,6 +1002,9 @@ body {
         }
         .content {
             padding: 2rem;
+            @media (max-width: @screen-sm-min) {
+                padding: 0;
+            }
         }
     }
     .apply-now{
@@ -1020,6 +1035,9 @@ body {
         }
         .content {
             padding: 4rem;
+            @media (max-width: @screen-sm-min) {
+                padding: 0;
+            }
         }
     }
 }
