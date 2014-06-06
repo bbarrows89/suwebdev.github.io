@@ -25,6 +25,14 @@
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
+        <!-- start Mixpanel -->
+        <script type="text/javascript">
+            (function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+            for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+            mixpanel.init("ebc843ed26d6b464cdfdbb93756a99af");
+            mixpanel.track("Returned from Application Submission");
+        </script>
+        <!-- end Mixpanel -->
     </head>
     <body class="faq">
         <!--[if lt IE 10]>
@@ -49,7 +57,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li>
                     <form>
-                        <button class="btn btn-primary text-white" type="submit" formaction="https://suwebdev.submittable.com/submit/">
+                        <button class="btn btn-apply btn-primary text-white" type="submit" formaction="https://suwebdev.submittable.com/submit/">
                             Apply Now
                         </button>
                     </form>
@@ -109,7 +117,7 @@
                     <ul class="footer-nav">
                         <li>
                             <form>
-                                <button class="btn btn-primary text-white" type="submit" formaction="https://suwebdev.submittable.com/submit/">
+                                <button class="btn btn-apply btn-primary text-white" type="submit" formaction="https://suwebdev.submittable.com/submit/">
                                     Apply Now
                                 </button>
                             </form>
@@ -162,6 +170,19 @@
             ga('create', 'UA-1802373-11', 'webdev.seattleu.edu');
             ga('require', 'displayfeatures');
             ga('send', 'pageview');
+        </script>
+
+        <!-- Mixpanel Page View Event -->
+        <script>
+        if (window.location.origin.indexOf('127.0.0.1') == -1) {
+            $(document).on('ready', function() {
+                // Mixpanel events
+                $('.btn-apply').on('click', function () {
+                    mixpanel.track('Apply Button Clicked');
+                });
+                mixpanel.track("Application thank you page viewed");
+            });
+        }
         </script>
 
         <!-- build:js scripts/plugins.js -->

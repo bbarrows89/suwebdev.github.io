@@ -20,7 +20,7 @@ $(document).on('ready', function() {
         $('html, body').stop().animate({
             'scrollTop': scrollVal
         }, 900, 'swing', function () {
-         window.location.hash = target;
+            window.location.hash = target;
         });
     }
 
@@ -32,7 +32,7 @@ $(document).on('ready', function() {
     var delta = 5;
     var navbarHeight = $('nav').outerHeight();
 
-    $(window).scroll(function(event){
+    $(window).scroll(function(){
         didScroll = true;
     });
 
@@ -47,8 +47,9 @@ $(document).on('ready', function() {
         var st = $(window).scrollTop();
         
         // Make sure they scroll more than delta
-        if(Math.abs(lastScrollTop - st) <= delta)
+        if(Math.abs(lastScrollTop - st) <= delta) {
             return;
+        }
         
         // If they scrolled down and are past the navbar, add class .nav-up.
         // This is necessary so you never see what is "behind" the navbar.
@@ -64,4 +65,5 @@ $(document).on('ready', function() {
         
         lastScrollTop = st;
     }
+    
 });
