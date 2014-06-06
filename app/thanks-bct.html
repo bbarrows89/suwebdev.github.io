@@ -179,7 +179,9 @@
                 $('.btn-apply').on('click', function () {
                     mixpanel.track('Apply Button Clicked');
                 });
-                mixpanel.track("BCT Thank You page viewed");
+                mixpanel.track("Page View", { 
+                    'title': 'Thanks for taking BCT'
+                });
             });
         }
         </script>

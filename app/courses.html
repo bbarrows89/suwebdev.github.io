@@ -277,7 +277,9 @@
                 $('.btn-apply').on('click', function () {
                     mixpanel.track('Apply Button Clicked');
                 });
-                mixpanel.track("Courses page viewed");
+                mixpanel.track("Page View", { 
+                    'title': 'Courses'
+                });
             });
         }
         </script>

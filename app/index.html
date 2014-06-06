@@ -236,7 +236,9 @@
                 $('.btn-apply').on('click', function () {
                     mixpanel.track('Apply Button Clicked');
                 });
-                mixpanel.track("Landing page viewed");
+                mixpanel.track("Page View", { 
+                    'title': 'Index'
+                });
             });
         }
         </script>

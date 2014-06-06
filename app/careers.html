@@ -325,7 +325,9 @@ on the Internet at <a href="http://www.bls.gov/ooh/computer-and-information-tech
                 $('.btn-apply').on('click', function () {
                     mixpanel.track('Apply Button Clicked');
                 });
-                mixpanel.track("Careers page viewed");
+                mixpanel.track("Page View", { 
+                    'title': 'Careers'
+                });
             });
         }
         </script>
