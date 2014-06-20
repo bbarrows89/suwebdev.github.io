@@ -1133,7 +1133,6 @@ footer.footer {
         font-size: 3rem;
         padding-left: 0;
         a {
-            margin-left: 2rem;
             color: @brand-white;
             &:link, &:visited {
                 color: @brand-white;
@@ -1141,10 +1140,9 @@ footer.footer {
             &:hover, &:active {
                 color: @brand-yellow;
             }
-        }
-        li:hover i {
-            color: @brand-yellow;
-            transition: all 0.5s ease;
+            i {
+                margin-right: 2rem;
+            }
         }
     }
 }
