@@ -136,6 +136,138 @@ body {
     }
 
 }
+/* About page styles */
+.about {
+    .feature-intro {
+        text-align: center;
+        .at2x('/img/tree_sun.jpg');
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 200px;
+        padding: 0;
+        .content {
+            background: @brand-green-trans;
+            padding: 2rem;
+            min-height: 200px;
+        }
+        p.lead {
+            font-size: 4rem;
+            color: @brand-white;
+        }
+        h1 {
+            font-size: 8rem;
+            color: @brand-red;
+            font-family: @font-family-condensed;
+            font-weight: 700;
+            text-transform: uppercase;
+            @media (max-width: @screen-md-min) {
+                font-size: 8rem;
+            }
+            @media (max-width: @screen-sm-min) {
+                font-size: 6rem;
+            }
+            @media (max-width: @screen-xs-min) {
+                font-size: 4rem;
+            }
+
+            small {
+                color: @brand-white;
+                white-space: nowrap;
+                @media (max-width: @screen-md-min) {
+                    font-size: 4rem;
+                }
+                @media (max-width: @screen-sm-min) {
+                    font-size: 3rem;
+                }
+                @media (max-width: @screen-xs-min) {
+                    font-size: 2rem;
+                }
+
+            }
+        }
+    }
+    .content {
+        padding: 4rem;
+        @media (max-width: @screen-sm-min) {
+            padding: 1rem;
+        }
+    }
+    .mission {
+        .at2x('img/bkgd_tiles/grid_navy.png');
+        background-repeat: repeat;
+        background-color: @brand-navy;
+        color: @brand-white;
+        a {
+            color: @brand-yellow;
+        }
+        p {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: @brand-white-trans;
+        }
+        blockquote {
+            border-left: none;
+            padding: 6rem 0;
+            @media (max-width: @screen-sm-min) {
+                padding: 2rem 0;
+            }
+        }
+        .big-serif {
+            font-family: @font-family-serif;
+            font-weight: 700;
+            color: @brand-white;
+            font-size: 3rem;
+        }
+
+    }
+    .adult-students {
+        .at2x('img/bkgd_tiles/p4_yellow.png');
+        background-repeat: repeat;
+        background-color: @brand-yellow;
+        color: @brand-black;
+        p {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: @brand-black;
+        }
+        a {
+            color: @brand-red;
+        }
+    }
+    .faculty {
+        .at2x('img/bkgd_tiles/p1_red.png');
+        background-repeat: repeat;
+        background-color: @brand-red;
+        color: @brand-white;
+        h3 {
+            color: @brand-blue;
+        }
+        p {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: @brand-white;
+        }
+        a {
+            color: @brand-yellow;
+        }
+        img {
+            background: @brand-black;
+            padding: 0.5rem;
+            margin: 1rem;
+        }
+        .linklist {
+            list-style-type: none;
+            font-size: 1.6rem;
+            li {
+                margin: 1rem 0;
+            }
+            .fa, .glyphicon {
+                color: @brand-yellow;
+            }
+        }
+    }
+}
 /* FAQ Styles */
 .faq {
     .feature-intro {
