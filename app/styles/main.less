@@ -234,6 +234,11 @@ body {
         a {
             color: @brand-red;
         }
+        img {
+            background: @brand-black;
+            padding: 0.5rem;
+            margin: 1rem;
+        }
     }
     .faculty {
         .at2x('img/bkgd_tiles/p1_red.png');
@@ -259,11 +264,24 @@ body {
         .linklist {
             list-style-type: none;
             font-size: 1.6rem;
+            text-align: right;
             li {
-                margin: 1rem 0;
+                margin: 1rem;
+                display: inline;
+                a {
+                    &:hover, &:link, &:visited, &:active {
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        color: @brand-blue;
+                    }
+                }
             }
             .fa, .glyphicon {
                 color: @brand-yellow;
+                &:hover {
+                    color: @brand-blue;
+                }
             }
         }
     }
