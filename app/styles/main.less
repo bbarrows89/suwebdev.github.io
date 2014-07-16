@@ -40,6 +40,41 @@ body {
         }
     }
 }
+.btn-request-info {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    border-radius: 0;
+    border: 1px solid @brand-white;
+    border-bottom: none;
+    &:hover {
+        border: 1px solid @brand-yellow;
+        border-bottom: none;
+        color: @brand-yellow;
+    }
+}
+
+.btn {
+    border-radius: 0 !important;
+}
+
+.modal.request-info-modal {
+    .modal-content {
+        border-radius: 0;
+        .at2x('img/bkgd_tiles/p1_black.png');
+        background-repeat: repeat;
+        background-color: @brand-white;
+    }
+    button.close {
+        color: @brand-white;
+        background: @brand-red;
+        padding: 1rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 1;
+    }
+}
 
 /* navbar styles */
 .navbar.navbar-default.navbar-su {

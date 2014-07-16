@@ -88,10 +88,7 @@
         <section class="feature webdev-intro container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <!-- Button trigger modal -->
-                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#request-info">
-                      Request Information
-                    </button>
+                    &nbsp;
                 </div>
                 <div class="col-md-6 content">
                     <p class="word-tag">
@@ -228,14 +225,16 @@
             </footer>
 
         </section>
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary btn-lg btn-request-info" data-toggle="modal" data-target="#request-info">
+          Request Information
+        </button>
         <!-- WuFoo form modal -->
-        <div class="modal fade" id="request-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade request-info-modal" id="request-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              </div>
               <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                 <div id="wufoo-zqgag8s1wkprc0">
                     <a href="https://suwebdev.wufoo.com/forms/zqgag8s1wkprc0">Request information</a>.
                 </div>
@@ -246,7 +245,7 @@
                 function resizeInfoForm() {
                     if (($('#request-info iframe').height() > 600) && !modalInitialized) {
                         modalInitialized = true;
-                        $('#request-info iframe').attr({'height':600});
+                        $('#request-info iframe').attr({'height':480});
                     }
                 }
                 var zqgag8s1wkprc0;(function(d, t) {
@@ -271,6 +270,7 @@
             </div>
           </div>
         </div>
+        <!-- end WuFoo Form -->
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
