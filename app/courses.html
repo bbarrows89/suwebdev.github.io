@@ -259,6 +259,52 @@
             </footer>
 
         </section>
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary btn-lg btn-request-info" data-toggle="modal" data-target="#request-info">
+          Request Information
+        </button>
+        <!-- WuFoo form modal -->
+        <div class="modal fade request-info-modal" id="request-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <div id="wufoo-zqgag8s1wkprc0">
+                    <a href="https://suwebdev.wufoo.com/forms/zqgag8s1wkprc0">Request information</a>.
+                </div>
+                <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">There are tons of <a href="http://www.wufoo.com/features/">Wufoo features</a> to help make your forms awesome.</div>
+                <script type="text/javascript">
+                // WuFoo Form resizing
+                var modalInitialized = false;
+                function resizeInfoForm() {
+                    if (($('#request-info iframe').height() > 600) && !modalInitialized) {
+                        modalInitialized = true;
+                        $('#request-info iframe').attr({'height':480});
+                    }
+                }
+                var zqgag8s1wkprc0;(function(d, t) {
+                    var s = d.createElement(t), options = {
+                    'userName':'suwebdev',
+                    'formHash':'zqgag8s1wkprc0',
+                    'autoResize':true,
+                    'resizeDone': resizeInfoForm,
+                    'height':'480',
+                    'async':true,
+                    'host':'wufoo.com',
+                    'header':'show',
+                    'ssl':false};
+                    s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+                    s.onload = s.onreadystatechange = function() {
+                    var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                    try { zqgag8s1wkprc0 = new WufooForm();zqgag8s1wkprc0.initialize(options);zqgag8s1wkprc0.display(); } catch (e) {}};
+                    var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                })(document, 'script');
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end WuFoo Form -->
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>

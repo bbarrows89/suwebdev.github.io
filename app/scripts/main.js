@@ -66,5 +66,25 @@ $(document).on('ready', function() {
         lastScrollTop = st;
     }
 
+    // Pop up modal information form nagger
+    var dateShown = null;
+    var today = Math.round(new Date().getTime() / 1000);
+    var yesterday = today - 86400; // Number of seconds in a day
+    var showModal = true;
+    try {
+        dateShown = localStorage.getItem('dateShown') ? parseInt(localStorage.getItem('dateShown'), 10) : yesterday;
+        if (dateShown <= yesterday) {
+            showModal = true;
+            localStorage.setItem('dateShown', today);
+        } else {
+            showModal = false;
+        }
+    } catch(e) {
+        showModal = true;
+    }
+    if (showModal){
+        setTimeout(function(){$('#request-info').modal('show');}, 5000);
+    }
+
 
 });
