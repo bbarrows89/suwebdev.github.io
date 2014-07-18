@@ -47,10 +47,49 @@ body {
     border-radius: 0;
     border: 1px solid @brand-white;
     border-bottom: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
     &:hover {
         border: 1px solid @brand-yellow;
         border-bottom: none;
         color: @brand-yellow;
+    }
+}
+.request-info-modal {
+    color: @brand-white;
+    font-weight: 300;
+    font-size: 1.5rem;
+    h3 {
+        color: @brand-yellow;
+    }
+    label, span.labelesque {
+        font-weight: 300;
+        font-size: 1.5rem;
+        width: 100%;
+        color: @brand-yellow;
+    }
+    input.submit {
+        background: @brand-red;
+        border: none;
+        padding: 0.8rem;
+        color: @brand-white;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 2.2rem;
+        &:hover {
+            color: @brand-yellow;
+        }
+    }
+    .half {
+        width: 45%;
+    }
+    .full {
+        width: 90%;
+    }
+    .note {
+        font-size: 1.2rem;
+        color: @brand-white-trans;
     }
 }
 
