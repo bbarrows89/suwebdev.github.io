@@ -34,10 +34,10 @@ body {
 
     .spinner {
         transition: all 2s ease;
-        &:hover {
-            transition: all 2s ease;
-            .rotate(360deg);
-        }
+    }
+    .spinner-trigger:hover .spinner {
+        transition: all 2s ease;
+        .rotate(360deg);
     }
 }
 .btn-request-info {
