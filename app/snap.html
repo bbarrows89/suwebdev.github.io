@@ -38,33 +38,36 @@
             window.onload = function(){
                 'use strict';
                 var susymbols = {};
-                susymbols.troll = Snap.select('#Troll');
-                susymbols.ferry = Snap.select('#Ferry');
+                var susymbol_ids = [
+                    'Ferry', 'Troll', 'Center_House', 'Union_Station',
+                    '_x31_201_3rd_Ave_Building', 'Seattle_Library', 'Mountain',
+                    'Gas_Works', 'Chapel', 'Space_Needle__x26__Birds', 'Jet_1_',
+                    'Columbia_Tower', 'Westin', 'Corncob_tower_2',
+                    'Corncob_tower_1', 'Winged_Guitar', 'Library', 'Train',
+                    'Sculpture_Park', 'Ferris_Wheel', 'Redhawk'
+                ];
 
-                susymbols.troll.hover(function(){
-                    console.log('Troll hovered');
-                    hoverfx(susymbols.troll);
-                }, function() {
-                    hoverfxOff(susymbols.troll);
-                });
-                susymbols.ferry.hover(function(){
-                    console.log('Ferry hovered');
-                    hoverfx(susymbols.ferry);
-                }, function() {
-                    hoverfxOff(susymbols.ferry);
-                });
+                for (var i = 0, len = susymbol_ids.length; i <= len; i++) {
+                    var this_symbol_id = susymbol_ids[i];
+                    var this_symbol_obj = Snap.select('#'+this_symbol_id);
 
-                var hoverfx = function(symbol) {
-                    symbol.attr({
-                        stroke: "#FFF7EC",
-                        fill: "#FFF7EC"
-                    });
-                }
-                var hoverfxOff = function(symbol) {
-                    symbol.attr({
-                        stroke: "#00245D",
-                        fill: "#00245D"
-                    });
+                    if (this_symbol_obj != undefined){
+                        console.log('found this_symbol_id: '+this_symbol_id);
+
+                        this_symbol_obj.hover(function(e){
+                            console.log(e.currentTarget.id+' hovered');
+                            susymbols[e.currentTarget.id].attr({
+                                stroke: "#FFF7EC",
+                                fill: "#FFF7EC"
+                            });
+                        }, function(e) {
+                            susymbols[e.currentTarget.id].attr({
+                                stroke: "#00245D",
+                                fill: "#00245D"
+                            });
+                        });
+                        susymbols[this_symbol_id] = this_symbol_obj;
+                    }
                 }
 
             };
