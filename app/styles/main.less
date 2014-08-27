@@ -219,6 +219,28 @@ body {
     }
 
 }
+/* SVG Page styles */
+.snap {
+    h1 {
+        position: absolute;
+        z-index: 1000;
+        left: 50px;
+        top: 100px
+    }
+    .description-containers {
+        position: absolute;
+        z-index: 1000;
+        right: 20px;
+        top: 300px;
+        width: 25%;
+        .description {
+            display: none;
+            &.start {
+                display: block;
+            }
+        }
+    }
+}
 /* About page styles */
 .about {
     .feature-intro {
