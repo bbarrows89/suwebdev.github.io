@@ -224,21 +224,73 @@ body {
     h1 {
         position: absolute;
         z-index: 1000;
-        left: 50px;
-        top: 100px
+        left: 0px;
+        top: 10px;
+        font-family: @font-family-condensed;
+        font-size: 2.8em;
+        color: @brand-red;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+        .at2x('/img/DiscoverSeattle.png', contain);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
+        margin: 0px;
+        width: 460px;
+        height: 201px;
     }
     .description-containers {
         position: absolute;
         z-index: 1000;
-        right: 20px;
-        top: 300px;
+        left: 550px;
+        top: 30px;
         width: 25%;
+        transition: position opacity 1000;
         .description {
             display: none;
             &.start {
                 display: block;
             }
+            h2 {
+                a {
+                    font-family: @font-family-serif;
+                    font-size: 3.5rem;
+                    font-weight: 700;
+                    color: @brand-navy;
+                    @media (max-width: @screen-md-min) {
+                        font-size: 3.5rem;
+                    }
+                    @media (max-width: @screen-sm-min) {
+                        font-size: 3rem;
+                    }
+                    @media (max-width: @screen-xs-min) {
+                        font-size: 2.5rem;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                a:link, a:visited {
+                    color: @brand-navy;
+                }
+            }
+            p {
+                a {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
         }
+    }
+    svg#SUPanorama {
+        position: absolute;
+        left: 0;
+        top: -70px;
     }
 }
 /* About page styles */
