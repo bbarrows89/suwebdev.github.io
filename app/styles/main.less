@@ -253,7 +253,9 @@ body {
                 display: block;
             }
             h2 {
+                text-transform: uppercase;
                 a {
+                    text-transform: uppercase;
                     font-family: @font-family-serif;
                     font-size: 3.5rem;
                     font-weight: 700;
@@ -279,7 +281,6 @@ body {
                 a {
                     font-size: 2.5rem;
                     font-weight: 700;
-                    text-transform: uppercase;
                     &:hover {
                         text-decoration: none;
                     }
@@ -291,6 +292,11 @@ body {
         position: absolute;
         left: 0;
         top: -70px;
+
+        path {
+            transition: all 1s ease-in-out;
+        }
+
     }
 }
 /* About page styles */

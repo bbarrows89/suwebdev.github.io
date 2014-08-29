@@ -59,10 +59,10 @@
                         this_symbol_obj.hover(function(e){
                             console.log(e.currentTarget.id+' hovered');
                             susymbols[e.currentTarget.id].attr({
-                                stroke: "#FFF7EC",
+                                stroke: "#FDB913",
                                 "stroke-width": 4,
-                                "stroke-opacity": 0.3,
-                                fill: "#FFF7EC"
+                                //"stroke-opacity": 0.3,
+                                fill: "#FDB913"
                             });
                             console.log('curr_description: '+curr_description);
                             console.log('e.currentTarget.id: '+e.currentTarget.id);
@@ -71,8 +71,8 @@
 
                                 if (curr_description != 'start'){
                                     susymbols[curr_description].attr({
-                                        stroke: "none",
-                                        fill: "none"
+                                        stroke: 0,
+                                        fill: "#0E2646"
                                     });
                                 }
                                 curr_description = e.currentTarget.id;
@@ -95,6 +95,7 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <base target="_parent" />
 
 
         <section class="container-fluid">
