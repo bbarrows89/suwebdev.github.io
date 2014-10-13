@@ -403,6 +403,29 @@ body {
             margin: 1rem;
         }
     }
+    .su {
+        background-color: @brand-white;
+        color: @brand-black;
+        p {
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: @brand-black;
+        }
+        a {
+            color: @brand-red;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .award-list {
+            list-style-type: none;
+            padding-top: 2rem;
+            p {
+                font-size: 1.6rem;
+            }
+        }
+    }
     .faculty {
         .at2x('img/bkgd_tiles/p1_red.png');
         background-repeat: repeat;
@@ -1114,7 +1137,7 @@ body {
         padding: 4rem;
         .at2x('img/bkgd_tiles/p4_yellow.png');
         background-repeat: repeat;
-        background-color: @brand-blue;
+        background-color: @brand-yellow;
         color: @brand-black;
         font-size: 2rem;
         @media (max-width: @screen-sm-min) {
@@ -1136,6 +1159,32 @@ body {
             margin-top: 2rem;
             padding: 1rem;
             background: rgba(56, 57, 56, 0.5);
+        }
+    }
+    .additional-funding {
+        padding: 4rem;
+        .at2x('img/bkgd_tiles/p4_navy.png');
+        background-repeat: repeat;
+        background-color: @brand-navy;
+        color: @brand-white;
+        font-size: 2rem;
+        @media (max-width: @screen-sm-min) {
+            padding: 1rem;
+        }
+        h2 {
+            color: @brand-yellow;
+            text-transform: uppercase;
+            padding-left: 1.2rem;
+            @media (max-width: @screen-sm-min) {
+                padding: 0rem;
+            }
+        }
+        a, a:link, a:visited, a:hover, a:active  {
+            color: @brand-yellow;
+        }
+        p {
+            font-size: 1.6rem;
+            font-weight: 300;
         }
     }
     .comparison-chart {
@@ -1390,6 +1439,32 @@ body {
             }
         }
     }
+    .top5 {
+        background: @brand-navy;
+        h2 {
+            color: @brand-yellow;
+        }
+        .content {
+            padding: 0 2rem;
+            text-align: center;
+            img {
+                width: 180px;
+                height: auto;
+                margin: 0 1rem;
+            }
+            @media (max-width: @screen-sm-min) {
+                padding: 0;
+            }
+            a {
+                &:visited, &:link {
+                    color: @brand-yellow;
+                }
+                &:hover, &:active {
+                    color: @brand-white;
+                }
+            }
+        }
+    }
     .create {
         background: url(img/bkgd_tiles/p1_red.png) repeat;
         h2 {
@@ -1558,6 +1633,10 @@ footer.footer {
                 margin-right: 2rem;
             }
         }
+    }
+    img.award {
+        width: 90px;
+        height: auto;
     }
 }
 

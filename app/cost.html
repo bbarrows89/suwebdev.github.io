@@ -86,7 +86,7 @@
                 </h1>
             </div>
         </section>
-        <section class="container-fluid cost-breakdown">
+        <section id="cost-breakdown" class="container-fluid cost-breakdown">
             <div class="row">
                 <div class="col-md-6">
                     <div class="table-responsive">
@@ -138,7 +138,7 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid equipment-needs">
+        <section id="equipment-needs" class="container-fluid equipment-needs">
             <div class="row content">
                 <div class="col-md-6">
                     <h2>Additional Equipment Needs</h2>
@@ -165,7 +165,7 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid financial-aid">
+        <section id="financial-aid" class="container-fluid financial-aid">
             <div class="row content">
                 <div class="col-md-6">
                     <iframe width="560" height="315" src="//www.youtube.com/embed/K8JuaYVJ_LE?list=PL0C957D7D8786B911" frameborder="0" allowfullscreen></iframe>
@@ -192,7 +192,41 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid comparison-chart">
+        <section id="additional-funding" class="container-fluid additional-funding">
+            <div class="row content">
+                <div class="col-md-12">
+                    <h2>Additional Funding Opportunities</h2>
+                    <p>Washington State provides some additional funding opportunities to students. You are encouraged to reach out to these organizations and find out whether you can take advantage of the support they offer.</p>
+                </div>
+            </div>
+            <div class="row content">
+                <div class="col-md-6">
+                    <h3><a href="http://www.readysetgrad.org/college/state-need-grant">Washington State Need Grants</a></h3>
+                    <p>
+                        The Washington State Need Grant is given based on financial need on a first-come, first-served basis. Early submission of the FAFSA is key to getting funding through this grant.
+                        <br><a href="http://www.readysetgrad.org/college/state-need-grant">Click here to learn more about WA State Need Grants.</a>
+                    </p>
+                    <h3><a href="http://www.careerbridge.wa.gov/">Washington State Career Bridge</a></h3>
+                    <p>
+                        This site provides WA State residents with information about career and education planning including many regional vocational programs.
+                        <br><a href="http://www.careerbridge.wa.gov/">Click here to learn more about Career Bridge.</a>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h3><a href="http://www.aauw.org/what-we-do/educational-funding-and-awards/career-development-grants/">AAUW Career Development Grants</a></h3>
+                    <p>
+                        Career Development Grants provide funding to women who hold a bachelor’s degree and are preparing to advance or change careers or re-enter the workforce. Primary consideration is given to women of color and women pursuing their first advanced degree or credentials in nontraditional fields.
+                        <br><a href="http://www.aauw.org/what-we-do/educational-funding-and-awards/career-development-grants/">Click here to learn more about AAUW Grants.</a>
+                    </p>
+                    <h3><a href="http://www.thewashboard.org/">Washboard Scholarships</a></h3>
+                    <p>
+                        The Wash Board connects WA State students to scholarship opportunities for all sorts of education funding.
+                        <br><a href="http://www.thewashboard.org/">Click here to learn more about The Wash Board.</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="comparison-chart" class="container-fluid comparison-chart">
             <div class="content">
                 <h2>How Do We Compare?</h2>
                 <p class="lead">
@@ -370,7 +404,7 @@
         </section>
 
 
-            <footer class="footer row">
+            <footer id="footer" class="footer row">
                 <div class="col-md-4">
                     <ul class="footer-nav">
                         <li>
@@ -394,6 +428,9 @@
                         <li><i class="fa fa-github fa-lg"></i> <a href="https://www.github.com/suwebdev">Github</a></li>
                         <li><i class="fa fa-google-plus fa-lg"></i> <a href="https://plus.google.com/108232146952162952239" rel="publisher">Google+</a></li>
                     </ul>
+                    <p>
+                        <a href="about.html#su"><img class="award" src="/img/USNewsBadge.png" alt="US News and World Report Best Colleges 2015"></a>
+                    </p>
                 </div>
                 <div class="col-md-4">
                     <p>
@@ -471,8 +508,8 @@
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="bower_components/retina.js/dist/retina.js"></script>
-        <script src="bower_components/respond/dest/respond.src.js"></script>
+        <script src="bower_components/retina.js/src/retina.js"></script>
+        <script src="bower_components/REM-unit-polyfill/js/rem.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 

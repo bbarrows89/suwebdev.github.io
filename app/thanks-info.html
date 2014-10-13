@@ -115,6 +115,9 @@
                         <li><a href="faq.html">FAQs</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
+                    <p>
+                        <a href="about.html#su"><img class="award" src="/img/USNewsBadge.png" alt="US News and World Report Best Colleges 2015"></a>
+                    </p>
                 </div>
                 <div class="col-md-4">
                     <ul class="social-links">
@@ -202,7 +205,8 @@
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="bower_components/retina.js/dist/retina.js"></script>
+        <script src="bower_components/retina.js/src/retina.js"></script>
+        <script src="bower_components/REM-unit-polyfill/js/rem.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -234,7 +238,7 @@
                     mixpanel.track('Request Info Closed');
                 });
                 mixpanel.track("Page View", {
-                    'title': 'Thanks for taking BCT'
+                    'title': 'Thanks for requesting info'
                 });
             });
         }
