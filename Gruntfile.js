@@ -148,7 +148,7 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     yuicompress: true,
-                    report: 'gzip'
+                    report: 'min'
                 },
                 files: {
                     '.tmp/styles/main.css': '<%= config.app %>/styles/main.less'
@@ -222,7 +222,8 @@ module.exports = function (grunt) {
         // Performs rewrites based on rev and the useminPrepare configuration
         usemin: {
             options: {
-                assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
+                assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images'],
+                report: 'min'
             },
             html: ['<%= config.dist %>/{,*/}*.html'],
             css: ['<%= config.dist %>/styles/{,*/}*.css']
