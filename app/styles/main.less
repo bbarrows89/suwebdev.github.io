@@ -113,6 +113,67 @@ body {
         top: 0;
         opacity: 1;
     }
+    iframe {
+        width:99%;
+        height:850px;
+        overflow-y:hidden;
+        overflow-x:hidden;
+    }
+    .modal-body {
+        padding-top: 15px;
+    }
+    @media screen and (max-width: @screen-sm-max) {
+        .iframe-wrap {
+          width: 640px;
+          height: 850px;
+          padding: 0;
+          padding-top: 35px;
+          overflow: hidden;
+        }
+        iframe {
+          width: 640px;
+          height: 850px;
+          -ms-zoom: 1;
+          -moz-transform: scale(1);
+          -moz-transform-origin: 0 0;
+          -o-transform: scale(1);
+          -o-transform-origin: 0 0;
+          -webkit-transform: scale(1);
+          -webkit-transform-origin: 0 0;
+        }
+    }
+    @media screen and (max-width: @screen-xs-max) {
+        .iframe-wrap {
+          width: 300px;
+          height: 500px;
+          padding: 0;
+          padding-top: 35px;
+          overflow: hidden;
+        }
+        iframe {
+          width: 640px;
+          height: 850px;
+          -ms-zoom: 0.45;
+          -moz-transform: scale(0.45);
+          -moz-transform-origin: 0 0;
+          -o-transform: scale(0.45);
+          -o-transform-origin: 0 0;
+          -webkit-transform: scale(0.45);
+          -webkit-transform-origin: 0 0;
+        }
+    }
+
+}
+
+@media screen and (min-width: @screen-md-min) {
+  .modal-dialog {
+    width: 700px;
+    margin: 30px auto;
+  }
+
+  .modal-content {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
 }
 
 /* navbar styles */
