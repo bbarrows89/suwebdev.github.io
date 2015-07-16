@@ -86,5 +86,17 @@ $(document).on('ready', function() {
         setTimeout(function(){$('#request-info').modal('show');}, 5000);
     }
 
+    // R2i tracking pixel
+    var okInsertScript = true;
+    $('#request-info').on('show.bs.modal', function (event) {
+        if(okInsertScript) {
+            $('<script>').attr({
+                'type': 'text/javascript',
+                'src': '//pixel.mathtag.com/event/js?mt_id=795545&mt_adid=142556&v1=&v2=&v3=&s1=&s2=&s3='
+            }).appendTo('head');
+            okInsertScript = false;
+        }
+    });
+
 
 });
