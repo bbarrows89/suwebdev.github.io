@@ -98,5 +98,17 @@ $(document).on('ready', function() {
         }
     });
 
+    // Controls for slide-out side-nagger
+    var promoSliderOpen = true;
+    $('.promo-open-toggle').on('click', function(){
+        if (promoSliderOpen){
+            $('#promo-slider').removeClass('open').addClass('closed');
+            promoSliderOpen = false;
+        } else {
+            $('#promo-slider').removeClass('closed').addClass('open');
+            promoSliderOpen = true;
+        }
+
+    });
 
 });
