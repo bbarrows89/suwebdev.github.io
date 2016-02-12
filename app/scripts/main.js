@@ -24,6 +24,17 @@ $(document).on('ready', function() {
         });
     }
 
+    // GA Tracking for Request Info Form
+    $('.request-info-modal .submit').on('click', function(event){
+        console.log('Submitted form. Event sent to GA.');
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'InquiryForm',
+          eventAction: 'submit',
+          eventLabel: 'webdevThanks'
+        });
+    })
+
     // Handle show/hide of header
     // Technique borrowed from: https://medium.com/design-startups/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c
     // Hide Header on on scroll down
