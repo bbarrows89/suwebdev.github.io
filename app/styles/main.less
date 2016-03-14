@@ -41,6 +41,7 @@ body {
     }
 }
 #promo-slider {
+    display: none; // remove this line to enable promo slider nagger
     position: absolute;
     top: 30rem;
     left: 0;
@@ -1564,8 +1565,7 @@ body {
         }
     }
     .webdev-intro {
-        //.at2x('/img/stay_weird_mid.jpg', cover);
-        .at2x('/img/computer_coffee.jpg', cover);
+        .at2x('/img/hands2.jpg', cover);
         background-position: top left;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1651,8 +1651,8 @@ body {
         }
     }
     .evolve {
-        .at2x('/img/la_wide_lg.jpg', cover);
-        background-position: top left;
+        .at2x('/img/study_group.jpg', cover);
+        background-position: center left;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -1693,6 +1693,7 @@ body {
         background-color: @brand-green;
         img {
             border: solid 2px @brand-black;
+            margin-top: 3rem;
         }
         .content {
             padding: 2rem;
