@@ -1,5 +1,20 @@
 $(document).on('ready', function(){
 
+    verifyFieldMatch(20,21);
+
+
+    $("select").live('change',function(event){
+         $('select:hidden').val('');
+           });
+
+    base2.DOM.Element.addEventListener(document.forms[0],'submit',function(){
+        $('input[type=submit]').attr('disabled', 'disabled');
+    });
+
+    wFORMS.behaviors.validation.onFail = function() {
+      $('#tfa_0 input[type=submit]').removeAttr("disabled", "disabled");
+    }
+
     /*
      * Helper script for iframe-published FormAssembly.com forms.
      * Auto-resize iframe to fit content.

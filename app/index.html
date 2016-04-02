@@ -275,25 +275,7 @@
 
                   <div class=""><div class="wForm" id="tfa_0-WRPR" dir="ltr">
                 <div class="codesection" id="code-tfa_0">
-                    <script>
-                        $(document).ready(function() {
 
-                            verifyFieldMatch(20,21);
-
-
-                            $("select").live('change',function(event){
-                                 $('select:hidden').val('');
-                                   });
-
-                            base2.DOM.Element.addEventListener(document.forms[0],'submit',function(){
-                                $('input[type=submit]').attr('disabled', 'disabled');
-                            });
-
-                            wFORMS.behaviors.validation.onFail = function() {
-                              $('#tfa_0 input[type=submit]').removeAttr("disabled", "disabled");
-                            }
-                        });
-                    </script>
 
                 </div>
                 <form method="post" action="https://seattleu.tfaforms.net/responses/processor" class="hintsTooltip labelsLeftAligned" id="tfa_0">
