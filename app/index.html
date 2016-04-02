@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- <script src="bower_components/modernizr/modernizr.js"></script> -->
         <!-- endbuild -->
         <!-- start Mixpanel -->
         <script type="text/javascript">
@@ -275,7 +275,25 @@
 
                   <div class=""><div class="wForm" id="tfa_0-WRPR" dir="ltr">
                 <div class="codesection" id="code-tfa_0">
+                    <script>
+                        $(document).ready(function() {
 
+                            verifyFieldMatch(20,21);
+
+
+                            $("select").live('change',function(event){
+                                 $('select:hidden').val('');
+                                   });
+
+                            base2.DOM.Element.addEventListener(document.forms[0],'submit',function(){
+                                $('input[type=submit]').attr('disabled', 'disabled');
+                            });
+
+                            wFORMS.behaviors.validation.onFail = function() {
+                              $('#tfa_0 input[type=submit]').removeAttr("disabled", "disabled");
+                            }
+                        });
+                    </script>
 
                 </div>
                 <form method="post" action="https://seattleu.tfaforms.net/responses/processor" class="hintsTooltip labelsLeftAligned" id="tfa_0">
@@ -480,8 +498,8 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
-        <script type="text/javascript" src="scripts/formAssembly.js"></script>
         <!-- endbuild -->
+        <!-- <script type="text/javascript" src="scripts/vendor/formAssembly.js"></script> -->
 
 </body>
 </html>
