@@ -1575,6 +1575,20 @@ body {
             padding: 2rem;
             background: rgba(56, 57, 56, 0.4);
         }
+        .video-content {
+            padding: 0 2rem;
+            background: none;
+        }
+        iframe {
+            margin-top: 3rem;
+        }
+        @media (max-width: @screen-md-min) {
+            iframe {
+                width: 100%;
+                height: auto;
+                min-height: 300px !important;
+            }
+        }
         p.word-tag {
             a {
                 white-space: nowrap;
