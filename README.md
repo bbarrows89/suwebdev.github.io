@@ -7,6 +7,8 @@ HERE IS SOME TEXT, GO SEAHAWKS!
 
 Go Mariners!
 
+Yay for GH Pages!
+
 Using this repository
 =====================
 This repository requires installation of Node.js, along with NPM, Bower, and Grunt. It was created via the Yeoman templating tool.
